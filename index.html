@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Power | بدائل الأسمنت المستدامة</title>
+    <!-- Bootstrap RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-modern">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-container">
+                    <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="brand-content">
+                        <span class="brand-text">Green Power</span>
+                        <span class="brand-tagline">مستقبل البناء المستدام</span>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                        
+                            <span class="nav-text">الرئيسية</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                          
+                            <span class="nav-text">من نحن</span>
+                        </a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">
+                      
+                            <span class="nav-text">خدماتنا</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                          
+                            <span class="nav-text">اتصل بنا</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-actions">
+                    <a href="contact.html" class="btn btn-contact">
+                        <i class="fas fa-headset ms-1"></i>
+                        احصل على استشارة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background-wrapper">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles"></div>
+            <div class="hero-shape-1"></div>
+            <div class="hero-shape-2"></div>
+            <div class="hero-shape-3"></div>
+        </div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-up">
+                    <div class="hero-badge">الأول في المملكة</div>
+                    <h1 class="hero-title">مستقبل <span class="highlight">البناء المستدام</span></h1>
+                    <p class="hero-subtitle">منتجات بديلة للأسمنت تقلل من الانبعاثات الكربونية بنسبة 60% مع أداء متفوق وتكلفة أقل</p>
+                    <div class="hero-cta">
+                        <a href="#products" class="btn btn-hero-primary">
+                            <span>استكشف منتجاتنا</span>
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-hero-secondary">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>تواصل معنا</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="stat-value"><span class="counter">60</span>%</div>
+                            <div class="stat-label">تقليل الانبعاثات</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="stat-value"><span class="counter">30</span>%</div>
+                            <div class="stat-label">توفير التكاليف</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-value"><span class="counter">25</span>%</div>
+                            <div class="stat-label">أداء أفضل</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hero-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1626260113600-84c917a39f59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="بناء مستدام" class="hero-image">
+                        <div class="hero-image-shape"></div>
+                        <div class="hero-badge-float">
+                            <div class="badge-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4999/4999783.png" alt="شعار الاستدامة" class="float-icon">
+                            </div>
+                            <span>رؤية 2030</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#ffffff" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,48C480,43,600,21,720,16C840,11,960,21,1080,32C1200,43,1320,53,1380,58.7L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">من نحن</h6>
+                <h2 class="section-title">نبذة عن Green Power</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjdG9yeSUyMG1vZGVybnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="مصنع جرين باور" class="img-fluid rounded-4 shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <p>تتمثل فكرة المشروع في إنشاء مصنع لإنتاج بدائل الأسمنت تحت مسمى "Green Power" وهو منشأة صناعية متكاملة تقع في مدينة الرياض بالمملكة العربية السعودية.</p>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>منتجات مستدامة</h4>
+                                <p>نقوم بتصنيع منتج GGBFS كبديل جزئي للأسمنت التقليدي بنسبة تصل إلى 60%.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>تقنيات متطورة</h4>
+                                <p>نعتمد على منظومة تشغيل متطورة تتضمن خطوط إنتاج عالية الكفاءة وأحدث تقنيات الفحص والتحليل.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>شراكات استراتيجية</h4>
+                                <p>نستهدف مصانع الخرسانة الجاهزة والمنتجات الأسمنتية بمنطقة الرياض مع خطط توسعية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">منتجاتنا</h6>
+                <h2 class="section-title">حلول البناء المستدامة</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uY3JldGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="GGBFS" class="img-fluid">
+                            <div class="eco-label">صديق للبيئة</div>
+                        </div>
+                        <div class="product-body">
+                            <h4>GGBFS</h4>
+                            <p>خبث أفران الصهر المحبب المطحون، بديل جزئي للأسمنت يحسن خصائص الخرسانة.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> يقلل انبعاثات الكربون</span>
+                                <span><i class="fas fa-check-circle"></i> يزيد من قوة الخرسانة</span>
+                                <span><i class="fas fa-check-circle"></i> يحسن مقاومة الكيماويات</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">المزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1517646331032-9e8563c520a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFkdmFuY2VkJTIwY29uY3JldGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="خلطات خرسانية متطورة" class="img-fluid">
+                            <div class="eco-label">توفير للطاقة</div>
+                        </div>
+                        <div class="product-body">
+                            <h4>خلطات خرسانية متطورة</h4>
+                            <p>تركيبات خرسانية مبتكرة تجمع بين الأداء العالي والاستدامة البيئية.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> مقاومة عالية</span>
+                                <span><i class="fas fa-check-circle"></i> استهلاك أقل للأسمنت</span>
+                                <span><i class="fas fa-check-circle"></i> ديمومة أطول</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">المزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1560748952-1d2d768c2337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbmNyZXRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="إضافات الخرسانة" class="img-fluid">
+                            <div class="eco-label">تكلفة أقل</div>
+                        </div>
+                        <div class="product-body">
+                            <h4>إضافات تحسين الخرسانة</h4>
+                            <p>مواد مبتكرة تعزز أداء الخرسانة وتزيد من كفاءتها الهيكلية والاقتصادية.</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-check-circle"></i> سهولة التشغيل</span>
+                                <span><i class="fas fa-check-circle"></i> تقليل النفاذية</span>
+                                <span><i class="fas fa-check-circle"></i> مقاومة للتآكل</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary mt-3">المزيد من التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">مميزاتنا</h6>
+                <h2 class="section-title">لماذا تختار Green Power؟</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>صديق للبيئة</h4>
+                        <p>تقليل البصمة الكربونية بنسبة تصل إلى 60% مقارنة بالأسمنت التقليدي</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>أداء متفوق</h4>
+                        <p>تحسين خصائص الخرسانة وزيادة متانتها ومقاومتها للتآكل</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h4>توفير التكاليف</h4>
+                        <p>خفض تكاليف الإنتاج مع المحافظة على الجودة العالية</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h4>صناعة وطنية</h4>
+                        <p>دعم الاقتصاد الوطني وتوطين الصناعة وتقليل الاعتماد على الاستيراد</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section-padding vision-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="vision-content">
+                        <h6 class="text-accent">رؤيتنا ورسالتنا</h6>
+                        <h2 class="section-title">نحو مستقبل مستدام</h2>
+                        <div class="divider mb-4"></div>
+                        
+                        <div class="vision-card mb-4">
+                            <h4><i class="fas fa-eye me-2"></i> الرؤية</h4>
+                            <p>أن نكون الرواد في صناعة بدائل الأسمنت في المملكة العربية السعودية، من خلال تقديم حلول بناء مستدامة وابتكارية تساهم في حماية البيئة وتعزيز الاقتصاد الوطني.</p>
+                        </div>
+                        
+                        <div class="vision-card mb-4">
+                            <h4><i class="fas fa-bullseye me-2"></i> الرسالة</h4>
+                            <p>تقديم منتجات بديلة للأسمنت بجودة عالية وكفاءة اقتصادية، تلبي احتياجات السوق السعودي من مواد البناء المستدامة، مع الالتزام بأعلى معايير السلامة والجودة، ودعم التنمية المستدامة.</p>
+                        </div>
+                        
+                        <div class="vision-card">
+                            <h4><i class="fas fa-star me-2"></i> القيم</h4>
+                            <div class="values-list">
+                                <span class="value-tag">الجودة</span>
+                                <span class="value-tag">الاستدامة</span>
+                                <span class="value-tag">الابتكار</span>
+                                <span class="value-tag">الشفافية</span>
+                                <span class="value-tag">خدمة العملاء</span>
+                                <span class="value-tag">الاحترام</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="vision-image">
+                        <img src="https://images.unsplash.com/photo-1624204386084-dd8c05e32226?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHN1c3RhaW5hYmxlJTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" alt="رؤية مستقبلية للبناء المستدام" class="img-fluid rounded-4 shadow">
+                        <div class="vision-badge">
+                            <span>رؤية المملكة</span>
+                            <h3>2030</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent">تواصل معنا</h6>
+                <h2 class="section-title">نحن هنا لمساعدتك</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">تواصل معنا للحصول على المزيد من المعلومات أو لطلب عرض سعر</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>العنوان</h5>
+                                <p>الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>اتصل بنا</h5>
+                                <p>+966 12 345 6789</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>البريد الإلكتروني</h5>
+                                <p>info@greenpower-sa.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="الاسم الكامل">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="رقم الهاتف">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select">
+                                        <option selected>موضوع الرسالة</option>
+                                        <option>استفسار عن المنتجات</option>
+                                        <option>طلب عرض سعر</option>
+                                        <option>التعاون والشراكات</option>
+                                        <option>أخرى</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="رسالتك"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">إرسال الرسالة</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <div class="logo-container">
+                                <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+                                <div class="brand-content">
+                                    <span class="brand-text">Green Power</span>
+                                    <span class="brand-tagline">مستقبل البناء المستدام</span>
+                                </div>
+                            </div>
+                            <p class="mt-3">نقدم حلول بناء مستدامة تلبي احتياجات السوق السعودي وتساهم في تحقيق رؤية المملكة 2030</p>
+                            <div class="footer-social">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">روابط سريعة</h5>
+                            <ul class="footer-links">
+                                <li><a href="#hero"><i class="fas fa-chevron-left ml-1"></i> الرئيسية</a></li>
+                                <li><a href="#about"><i class="fas fa-chevron-left ml-1"></i> من نحن</a></li>
+                                <li><a href="services.html"><i class="fas fa-chevron-left ml-1"></i> خدماتنا</a></li>
+                                <li><a href="contact.html"><i class="fas fa-chevron-left ml-1"></i> اتصل بنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">خدماتنا</h5>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fas fa-chevron-left ml-1"></i> بدائل الأسمنت</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-left ml-1"></i> الفحص والتحليل</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-left ml-1"></i> الاستشارات الفنية</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-left ml-1"></i> التدريب</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">تواصل معنا</h5>
+                            <ul class="footer-contact">
+                                <li>
+                                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="contact-text">
+                                        <span>العنوان</span>
+                                        <p>الرياض، المملكة العربية السعودية</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                                    <div class="contact-text">
+                                        <span>الهاتف</span>
+                                        <p>+966 12 345 6789</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                    <div class="contact-text">
+                                        <span>البريد الإلكتروني</span>
+                                        <p>info@greenpower-sa.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">جميع الحقوق محفوظة &copy; 2025 Green Power</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">الشروط والأحكام</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-modern');
+            const backToTop = document.querySelector('.back-to-top');
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                backToTop.classList.add('active');
+            } else {
+                navbar.classList.remove('scrolled');
+                backToTop.classList.remove('active');
+            }
+        });
+        
+        // Counter animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        
+        function animateCounters() {
+            counters.forEach(counter => {
+                const target = +counter.innerText;
+                const count = 0;
+                const inc = target / speed;
+                
+                function updateCount() {
+                    const current = +counter.innerText;
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + inc);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                }
+                
+                updateCount();
+            });
+        }
+        
+        // Trigger counter animation when in viewport
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            observer.observe(heroStats);
+        }
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Back to top button functionality
+        document.getElementById('backToTop').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 
