@@ -14,6 +14,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="contact.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- نمط إضافي للتحكم في قسم الهيرو -->
+  
 </head>
 <body>
     <!-- Navbar -->
@@ -234,13 +238,13 @@
     </section>
 
     <!-- Social Media Section -->
-    <section class="social-section">
+    <section class="social-section" style="display: block !important; visibility: visible !important;">
         <div class="container">
-            <div class="section-header text-center mb-5" data-aos="fade-up">
+            <div class="section-header text-center mb-5">
                 <h2 class="section-title">تابعنا على وسائل التواصل الاجتماعي</h2>
                 <p class="section-subtitle">ابق على اطلاع بآخر أخبارنا وتحديثاتنا</p>
             </div>
-            <div class="social-links" data-aos="fade-up">
+            <div class="social-links" style="display: flex !important; visibility: visible !important;">
                 <a href="#" class="social-link">
                     <i class="fab fa-facebook-f"></i>
                     <span>Facebook</span>
@@ -372,6 +376,41 @@
                 navbar.classList.remove('scrolled');
             }
         });
+
+        // إصلاح عرض قسم وسائل التواصل الاجتماعي
+        document.addEventListener('DOMContentLoaded', function() {
+            const socialSection = document.querySelector('.social-section');
+            const socialLinks = document.querySelector('.social-links');
+            
+            if (socialSection) {
+                socialSection.style.display = 'block';
+                socialSection.style.visibility = 'visible';
+            }
+            
+            if (socialLinks) {
+                socialLinks.style.display = 'flex';
+                socialLinks.style.visibility = 'visible';
+                
+                // تغيير التنسيق حسب حجم الشاشة
+                if (window.innerWidth <= 767) {
+                    socialLinks.style.flexDirection = 'column';
+                } else {
+                    socialLinks.style.flexDirection = 'row';
+                }
+            }
+            
+            window.addEventListener('resize', function() {
+                if (socialLinks) {
+                    if (window.innerWidth <= 767) {
+                        socialLinks.style.flexDirection = 'column';
+                    } else {
+                        socialLinks.style.flexDirection = 'row';
+                    }
+                }
+            });
+        });
     </script>
+    <!-- Responsive Script -->
+    <script src="responsive.js"></script>
 </body>
 </html> 

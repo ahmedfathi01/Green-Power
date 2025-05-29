@@ -16,6 +16,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- نمط إضافي للتحكم في قسم الهيرو -->
+  
 </head>
 <body>
     <!-- Navbar -->
@@ -37,26 +41,26 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">
-                        
+
                             <span class="nav-text">الرئيسية</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">
-                          
+
                             <span class="nav-text">من نحن</span>
                         </a>
                     </li>
-                  
+
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">
-                      
+
                             <span class="nav-text">خدماتنا</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">
-                          
+
                             <span class="nav-text">اتصل بنا</span>
                         </a>
                     </li>
@@ -73,71 +77,73 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
-        <div class="hero-background-wrapper">
-            <div class="hero-overlay"></div>
-            <div class="hero-particles"></div>
-            <div class="hero-shape-1"></div>
-            <div class="hero-shape-2"></div>
-            <div class="hero-shape-3"></div>
+        <div class="floating-shapes">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
         </div>
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-6 hero-content" data-aos="fade-up">
-                    <div class="hero-badge">الأول في المملكة</div>
-                    <h1 class="hero-title">مستقبل <span class="highlight">البناء المستدام</span></h1>
-                    <p class="hero-subtitle">منتجات بديلة للأسمنت تقلل من الانبعاثات الكربونية بنسبة 60% مع أداء متفوق وتكلفة أقل</p>
-                    <div class="hero-cta">
-                        <a href="#products" class="btn btn-hero-primary">
+        <div class="tech-lines"></div>
+        <div class="data-point data-point-1">
+            <i class="fas fa-leaf"></i>
+            <span>60% تقليل الانبعاثات</span>
+        </div>
+        <div class="data-point data-point-2">
+            <i class="fas fa-chart-line"></i>
+            <span>25% أداء أفضل</span>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">بدائل الأسمنت المستدامة</h1>
+                    <p class="lead mb-4">نقدم حلول بناء مستدامة تلبي احتياجات السوق السعودي وتساهم في تحقيق رؤية المملكة 2030</p>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>حلول مستدامة</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>جودة عالية</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>أسعار تنافسية</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta mt-5">
+                        <a href="#products" class="btn btn-hero-primary me-3">
                             <span>استكشف منتجاتنا</span>
                             <i class="fas fa-long-arrow-alt-left"></i>
                         </a>
                         <a href="#contact" class="btn btn-hero-secondary">
-                            <i class="fas fa-phone-alt"></i>
+                            <i class="fas fa-headset ms-1"></i>
                             <span>تواصل معنا</span>
                         </a>
                     </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div class="stat-value"><span class="counter">60</span>%</div>
-                            <div class="stat-label">تقليل الانبعاثات</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-coins"></i>
-                            </div>
-                            <div class="stat-value"><span class="counter">30</span>%</div>
-                            <div class="stat-label">توفير التكاليف</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="stat-value"><span class="counter">25</span>%</div>
-                            <div class="stat-label">أداء أفضل</div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-6 hero-image-col" data-aos="fade-up" data-aos-delay="200">
-                    <div class="hero-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1626260113600-84c917a39f59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="بناء مستدام" class="hero-image">
-                        <div class="hero-image-shape"></div>
-                        <div class="hero-badge-float">
-                            <div class="badge-icon">
-                                <img src="https://cdn-icons-png.flaticon.com/512/4999/4999783.png" alt="شعار الاستدامة" class="float-icon">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjdG9yeSUyMG1vZGVybnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Green Power" class="img-fluid rounded-4 shadow">
+                        <div class="hero-badge">
+                            <span>مستقبل البناء</span>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number"><span class="counter">60</span>%</div>
+                                <div class="stat-label">تقليل الانبعاثات</div>
                             </div>
-                            <span>رؤية 2030</span>
+                            <div class="stat-item">
+                                <div class="stat-number"><span class="counter">25</span>%</div>
+                                <div class="stat-label">أداء أفضل</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number"><span class="counter">40</span>%</div>
+                                <div class="stat-label">توفير التكاليف</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
-                <path fill="#ffffff" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,48C480,43,600,21,720,16C840,11,960,21,1080,32C1200,43,1320,53,1380,58.7L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
-            </svg>
         </div>
     </section>
 
@@ -149,44 +155,64 @@
                 <h2 class="section-title">نبذة عن Green Power</h2>
                 <div class="divider mx-auto"></div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center about-wrapper">
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-                    <div class="about-img">
-                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjdG9yeSUyMG1vZGVybnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="مصنع جرين باور" class="img-fluid rounded-4 shadow">
+                    <div class="about-img-container">
+                        <div class="about-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjdG9yeSUyMG1vZGVybnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="مصنع جرين باور" class="img-fluid rounded-4">
+                        </div>
+                        <div class="about-img-badge">
+                            <div class="badge-icon"><i class="fas fa-industry"></i></div>
+                            <span>مصنع حديث</span>
+                        </div>
+                        <div class="about-img-shape-1"></div>
+                        <div class="about-img-shape-2"></div>
+                        <div class="about-img-dots"></div>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="about-content">
-                        <p>تتمثل فكرة المشروع في إنشاء مصنع لإنتاج بدائل الأسمنت تحت مسمى "Green Power" وهو منشأة صناعية متكاملة تقع في مدينة الرياض بالمملكة العربية السعودية.</p>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-leaf"></i>
+                        <div class="about-text-wrapper">
+                    >تتمثل فكرة المشروع في إنشاء مصنع لإنتاج بدائل الأسمنت تحت مسمى "Green Power" وهو منشأة صناعية متكاملة تقع في مدينة الرياض بالمملكة العربية السعودية.</p>
+                        </div>
+
+                        <div class="features-grid">
+                            <div class="feature-item" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>منتجات مستدامة</h4>
+                                    <p>نقوم بتصنيع منتج GGBFS كبديل جزئي للأسمنت التقليدي بنسبة تصل إلى 60%.</p>
+                                </div>
                             </div>
-                            <div class="feature-text">
-                                <h4>منتجات مستدامة</h4>
-                                <p>نقوم بتصنيع منتج GGBFS كبديل جزئي للأسمنت التقليدي بنسبة تصل إلى 60%.</p>
+
+                            <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="feature-icon">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>تقنيات متطورة</h4>
+                                    <p>نعتمد على منظومة تشغيل متطورة تتضمن خطوط إنتاج عالية الكفاءة وأحدث تقنيات الفحص والتحليل.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="feature-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>شراكات استراتيجية</h4>
+                                    <p>نستهدف مصانع الخرسانة الجاهزة والمنتجات الأسمنتية بمنطقة الرياض مع خطط توسعية.</p>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-industry"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>تقنيات متطورة</h4>
-                                <p>نعتمد على منظومة تشغيل متطورة تتضمن خطوط إنتاج عالية الكفاءة وأحدث تقنيات الفحص والتحليل.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>شراكات استراتيجية</h4>
-                                <p>نستهدف مصانع الخرسانة الجاهزة والمنتجات الأسمنتية بمنطقة الرياض مع خطط توسعية.</p>
-                            </div>
+
+                        <div class="about-cta">
+                            <a href="#products" class="btn btn-about-primary">
+                                <span>منتجاتنا</span>
+                                <i class="fas fa-long-arrow-alt-left"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -194,72 +220,6 @@
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="section-padding bg-light">
-        <div class="container">
-            <div class="section-header text-center mb-5" data-aos="fade-up">
-                <h6 class="text-accent">منتجاتنا</h6>
-                <h2 class="section-title">حلول البناء المستدامة</h2>
-                <div class="divider mx-auto"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uY3JldGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="GGBFS" class="img-fluid">
-                            <div class="eco-label">صديق للبيئة</div>
-                        </div>
-                        <div class="product-body">
-                            <h4>GGBFS</h4>
-                            <p>خبث أفران الصهر المحبب المطحون، بديل جزئي للأسمنت يحسن خصائص الخرسانة.</p>
-                            <div class="product-features">
-                                <span><i class="fas fa-check-circle"></i> يقلل انبعاثات الكربون</span>
-                                <span><i class="fas fa-check-circle"></i> يزيد من قوة الخرسانة</span>
-                                <span><i class="fas fa-check-circle"></i> يحسن مقاومة الكيماويات</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary mt-3">المزيد من التفاصيل</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.unsplash.com/photo-1517646331032-9e8563c520a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFkdmFuY2VkJTIwY29uY3JldGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="خلطات خرسانية متطورة" class="img-fluid">
-                            <div class="eco-label">توفير للطاقة</div>
-                        </div>
-                        <div class="product-body">
-                            <h4>خلطات خرسانية متطورة</h4>
-                            <p>تركيبات خرسانية مبتكرة تجمع بين الأداء العالي والاستدامة البيئية.</p>
-                            <div class="product-features">
-                                <span><i class="fas fa-check-circle"></i> مقاومة عالية</span>
-                                <span><i class="fas fa-check-circle"></i> استهلاك أقل للأسمنت</span>
-                                <span><i class="fas fa-check-circle"></i> ديمومة أطول</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary mt-3">المزيد من التفاصيل</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.unsplash.com/photo-1560748952-1d2d768c2337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbmNyZXRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="إضافات الخرسانة" class="img-fluid">
-                            <div class="eco-label">تكلفة أقل</div>
-                        </div>
-                        <div class="product-body">
-                            <h4>إضافات تحسين الخرسانة</h4>
-                            <p>مواد مبتكرة تعزز أداء الخرسانة وتزيد من كفاءتها الهيكلية والاقتصادية.</p>
-                            <div class="product-features">
-                                <span><i class="fas fa-check-circle"></i> سهولة التشغيل</span>
-                                <span><i class="fas fa-check-circle"></i> تقليل النفاذية</span>
-                                <span><i class="fas fa-check-circle"></i> مقاومة للتآكل</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary mt-3">المزيد من التفاصيل</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Benefits Section -->
     <section id="benefits" class="section-padding">
@@ -269,41 +229,54 @@
                 <h2 class="section-title">لماذا تختار Green Power؟</h2>
                 <div class="divider mx-auto"></div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up">
-                    <div class="benefit-card text-center">
-                        <div class="benefit-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h4>صديق للبيئة</h4>
-                        <p>تقليل البصمة الكربونية بنسبة تصل إلى 60% مقارنة بالأسمنت التقليدي</p>
-                    </div>
+            <div class="benefits-wrapper">
+                <div class="benefits-header text-center mb-5" data-aos="fade-up">
+                    <h3 class="benefits-title">مميزاتنا</h3>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="benefit-card text-center">
-                        <div class="benefit-icon">
-                            <i class="fas fa-chart-line"></i>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                        <div class="benefit-card text-center">
+                            <div class="benefit-icon-wrapper">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                            </div>
+                            <h4>صديق للبيئة</h4>
+                            <p>تقليل البصمة الكربونية بنسبة تصل إلى 60% مقارنة بالأسمنت التقليدي</p>
                         </div>
-                        <h4>أداء متفوق</h4>
-                        <p>تحسين خصائص الخرسانة وزيادة متانتها ومقاومتها للتآكل</p>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="benefit-card text-center">
-                        <div class="benefit-icon">
-                            <i class="fas fa-coins"></i>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="benefit-card text-center">
+                            <div class="benefit-icon-wrapper">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <h4>أداء متفوق</h4>
+                            <p>تحسين خصائص الخرسانة وزيادة متانتها ومقاومتها للتآكل</p>
                         </div>
-                        <h4>توفير التكاليف</h4>
-                        <p>خفض تكاليف الإنتاج مع المحافظة على الجودة العالية</p>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="benefit-card text-center">
-                        <div class="benefit-icon">
-                            <i class="fas fa-flag"></i>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="benefit-card text-center">
+                            <div class="benefit-icon-wrapper">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                            </div>
+                            <h4>توفير التكاليف</h4>
+                            <p>خفض تكاليف الإنتاج مع المحافظة على الجودة العالية</p>
                         </div>
-                        <h4>صناعة وطنية</h4>
-                        <p>دعم الاقتصاد الوطني وتوطين الصناعة وتقليل الاعتماد على الاستيراد</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="benefit-card text-center">
+                            <div class="benefit-icon-wrapper">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                            </div>
+                            <h4>صناعة وطنية</h4>
+                            <p>دعم الاقتصاد الوطني وتوطين الصناعة وتقليل الاعتماد على الاستيراد</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -319,17 +292,17 @@
                         <h6 class="text-accent">رؤيتنا ورسالتنا</h6>
                         <h2 class="section-title">نحو مستقبل مستدام</h2>
                         <div class="divider mb-4"></div>
-                        
+
                         <div class="vision-card mb-4">
                             <h4><i class="fas fa-eye me-2"></i> الرؤية</h4>
                             <p>أن نكون الرواد في صناعة بدائل الأسمنت في المملكة العربية السعودية، من خلال تقديم حلول بناء مستدامة وابتكارية تساهم في حماية البيئة وتعزيز الاقتصاد الوطني.</p>
                         </div>
-                        
+
                         <div class="vision-card mb-4">
                             <h4><i class="fas fa-bullseye me-2"></i> الرسالة</h4>
                             <p>تقديم منتجات بديلة للأسمنت بجودة عالية وكفاءة اقتصادية، تلبي احتياجات السوق السعودي من مواد البناء المستدامة، مع الالتزام بأعلى معايير السلامة والجودة، ودعم التنمية المستدامة.</p>
                         </div>
-                        
+
                         <div class="vision-card">
                             <h4><i class="fas fa-star me-2"></i> القيم</h4>
                             <div class="values-list">
@@ -352,6 +325,178 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section - Modern Cards Design -->
+    <section id="products" class="products-section section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="products-header text-center" data-aos="fade-up">
+                <h6 class="text-accent">منتجاتنا</h6>
+                <h2 class="section-title">حلول البناء المستدامة</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">نقدم مجموعة متنوعة من المنتجات المبتكرة التي تلبي احتياجات صناعة البناء الحديثة</p>
+            </div>
+
+            <!-- Products Grid - New Design -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-item-inner">
+                        <div class="product-thumb">
+                            <div class="product-label">منتج رئيسي</div>
+                            <img src="https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uY3JldGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" alt="GGBFS">
+                            <div class="product-overlay">
+                                <div class="product-action">
+                                    <a href="#contact" class="action-btn">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">
+                                <i class="fas fa-leaf"></i>
+                                <span>بدائل الأسمنت</span>
+                            </div>
+                            <h3 class="product-name">GGBFS</h3>
+                            <p class="product-desc">خبث أفران الصهر المحبب المطحون، بديل جزئي للأسمنت يحسن خصائص الخرسانة ويقلل من البصمة الكربونية.</p>
+                            <div class="product-features">
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>يقلل انبعاثات الكربون بنسبة 60%</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>يزيد من قوة الخرسانة</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>يحسن مقاومة الكيماويات</span>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <a href="#contact" class="product-btn">طلب عرض سعر</a>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-item-inner">
+                        <div class="product-thumb">
+                            <div class="product-label">الأكثر طلباً</div>
+                            <img src="https://images.unsplash.com/photo-1517646331032-9e8563c520a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFkdmFuY2VkJTIwY29uY3JldGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" alt="خلطات خرسانية متطورة">
+                            <div class="product-overlay">
+                                <div class="product-action">
+                                    <a href="#contact" class="action-btn">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">
+                                <i class="fas fa-bolt"></i>
+                                <span>خلطات متطورة</span>
+                            </div>
+                            <h3 class="product-name">خلطات خرسانية متطورة</h3>
+                            <p class="product-desc">تركيبات خرسانية مبتكرة تجمع بين الأداء العالي والاستدامة البيئية، مصممة لتلبية متطلبات المشاريع الحديثة.</p>
+                            <div class="product-features">
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>مقاومة عالية للضغط</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>استهلاك أقل للأسمنت بنسبة 30%</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>عمر افتراضي أطول</span>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <a href="#contact" class="product-btn">طلب عرض سعر</a>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-item-inner">
+                        <div class="product-thumb">
+                            <div class="product-label">جديد</div>
+                            <img src="https://images.unsplash.com/photo-1560748952-1d2d768c2337?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbmNyZXRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=80" alt="إضافات الخرسانة">
+                            <div class="product-overlay">
+                                <div class="product-action">
+                                    <a href="#contact" class="action-btn">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">
+                                <i class="fas fa-flask"></i>
+                                <span>إضافات خاصة</span>
+                            </div>
+                            <h3 class="product-name">إضافات تحسين الخرسانة</h3>
+                            <p class="product-desc">مواد مبتكرة تعزز أداء الخرسانة وتزيد من كفاءتها الهيكلية والاقتصادية، مع ضمان الجودة والمتانة.</p>
+                            <div class="product-features">
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>سهولة التشغيل والصب</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>تقليل النفاذية للماء</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>مقاومة للتآكل والتشققات</span>
+                                </div>
+                            </div>
+                            <div class="product-bottom">
+                                <a href="#contact" class="product-btn">طلب عرض سعر</a>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products CTA -->
+            <div class="products-cta" data-aos="fade-up" data-aos-delay="400">
+                <div class="cta-content">
+                    <h3>هل تبحث عن حلول مخصصة؟</h3>
+                    <p>يمكننا تطوير منتجات خاصة تناسب احتياجات مشروعك</p>
+                </div>
+                <a href="#contact" class="cta-btn">تواصل مع فريق المبيعات</a>
             </div>
         </div>
     </section>
@@ -547,12 +692,12 @@
             once: true,
             offset: 100
         });
-        
+
         // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar-modern');
             const backToTop = document.querySelector('.back-to-top');
-            
+
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
                 backToTop.classList.add('active');
@@ -561,17 +706,17 @@
                 backToTop.classList.remove('active');
             }
         });
-        
+
         // Counter animation
         const counters = document.querySelectorAll('.counter');
         const speed = 200;
-        
+
         function animateCounters() {
             counters.forEach(counter => {
                 const target = +counter.innerText;
                 const count = 0;
                 const inc = target / speed;
-                
+
                 function updateCount() {
                     const current = +counter.innerText;
                     if (current < target) {
@@ -581,11 +726,11 @@
                         counter.innerText = target;
                     }
                 }
-                
+
                 updateCount();
             });
         }
-        
+
         // Trigger counter animation when in viewport
         const heroStats = document.querySelector('.hero-stats');
         if (heroStats) {
@@ -597,18 +742,18 @@
                     }
                 });
             });
-            
+
             observer.observe(heroStats);
         }
-        
+
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
@@ -617,7 +762,7 @@
                 }
             });
         });
-        
+
         // Back to top button functionality
         document.getElementById('backToTop').addEventListener('click', function(e) {
             e.preventDefault();
@@ -627,5 +772,7 @@
             });
         });
     </script>
+    <!-- Responsive Script -->
+    <script src="responsive.js"></script>
 </body>
-</html> 
+</html>

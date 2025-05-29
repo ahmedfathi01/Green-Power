@@ -312,22 +312,19 @@ a{
 .social-link-small {
     width: 40px;
     height: 40px;
-    background: #f8f9fa;
+
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--dark-color);
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
-}
-
-.social-link-small:hover {
     transform: translateY(-3px);
     background: var(--primary-color);
     color: white;
     box-shadow: 0 5px 15px rgba(46, 204, 113, 0.2);
 }
+
+
 
 /* Form header adjustments */
 .form-header {
@@ -597,10 +594,7 @@ a{
     transition: all 0.3s ease;
 }
 
-.info-item:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
+
 
 .info-item:hover::before {
     opacity: 1;
@@ -827,23 +821,30 @@ a{
 
 /* Social Media Section */
 .social-section {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    position: relative;
-    overflow: hidden;
+    padding: 80px 0 !important;
+    display: block !important;
+    visibility: visible !important; 
+    opacity: 1 !important;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 5 !important;
 }
 
-.social-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(46, 204, 113, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 80% 70%, rgba(52, 152, 219, 0.05) 0%, transparent 30%);
-    z-index: 0;
+.social-section * {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.social-links {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    flex-wrap: wrap !important;
+    position: relative !important;
+    z-index: 10 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .section-header {
@@ -878,15 +879,6 @@ a{
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 1;
 }
 
 .social-link {
@@ -979,12 +971,14 @@ a{
 
 @media (max-width: 767.98px) {
     .social-links {
-        gap: 1rem;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
     }
     
     .social-link {
-        padding: 1rem 1.5rem;
-        min-width: 150px;
+        width: 100% !important;
+        max-width: 280px !important;
     }
     
     .section-title {
@@ -1435,3 +1429,71 @@ a{
         margin-top: 2rem;
     }
 }
+
+      /* تحسينات للموبايل للقسم الرئيسي */
+      @media (max-width: 767.98px) {
+        .contact-hero {
+            padding-top: 130px !important;
+            padding-bottom: 50px !important;
+            text-align: center;
+        }
+        
+        .contact-hero .row {
+            min-height: auto !important;
+            flex-direction: column-reverse;
+        }
+        
+        .contact-hero .col-lg-6 {
+            margin-bottom: 30px !important;
+        }
+
+        .hero-image {
+            margin: 0 auto 30px !important;
+            max-width: 85% !important;
+            position: relative;
+        }
+        
+        .hero-image img {
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(46, 204, 113, 0.2);
+        }
+        
+        /* تحسين العناصر المتباعدة */
+        .contact-info-wrapper {
+            margin-bottom: 30px !important;
+            text-align: center;
+        }
+        
+        /* تنسيق عناصر المعلومات */
+        .info-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .info-icon {
+            margin-bottom: 15px;
+        }
+        
+        /* تحسين صفحة وسائل التواصل */
+        .social-section {
+            padding: 50px 0 !important;
+        }
+        
+        /* تحسين الشكل العام */
+        .data-point {
+            margin: 5px;
+            display: inline-flex;
+        }
+        
+        .data-points-container {
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .hero-badge {
+            margin: 0 auto 20px;
+        }
+    }
